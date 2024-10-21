@@ -1,0 +1,19 @@
+[package]
+name = "limit-order-cpi"
+version = "0.1.0"
+edition = "2021"
+description = "Anchor CPI client for the Jupiter program."
+license = "Apache-2.0"
+authors = ["Goran Gutovic <gutovicgoran@gmail.com"]
+keywords = ["solana", "anchor", "cpi", "jupiter", "dca"]
+
+[features]
+default = ["cpi"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+
+[dependencies]
+anchor-gen = "0.3.1"
+anchor-lang = { version = "0.29.0" }
